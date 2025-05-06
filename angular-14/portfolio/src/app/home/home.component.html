@@ -1,0 +1,12 @@
+<h2>{{ headerName | lowercase }}</h2>
+
+<h2 [style.color]="colorname" [style.font-size]="font">My salary is {{ salary | percent }}</h2>
+<br>
+
+<button (click)="functionClick('click here')">Click Me</button>
+<br>
+
+<input #txt [value]="isdisabled" [disabled]="isdisabled" (change)="functionClick(txt.value)" />
+<br>
+
+<!--<input [(ngModel)]="headerName" />-->

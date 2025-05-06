@@ -1,0 +1,6 @@
+# Ignore all spec files
+**/*.spec.ts
+
+# Explanation:
+# **/ means "any directory and subdirectory."
+# *.spec.ts matches all .spec.ts files.
