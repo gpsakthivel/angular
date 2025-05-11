@@ -1,0 +1,32 @@
+{
+    "/api": {
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "headers": {
+            "X-Custom-Header": "value"
+        },
+        "target": "https://api1.example.com",
+        "router": {
+        "host2.example.com": "https://api2.example.com"
+        }
+    },
+    "/auth": {
+        "target": "http://localhost:4000",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+        "^/auth": ""
+        }
+    },
+    "/api/v1/*": {
+        "target": "https://api.example.com/v1",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+        "^/api/v1": ""
+        }
+    }
+}

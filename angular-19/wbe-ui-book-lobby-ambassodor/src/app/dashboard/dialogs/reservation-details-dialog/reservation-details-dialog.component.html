@@ -1,0 +1,56 @@
+<div class="confirmation-dialog">
+    <div class="dialog-header">
+        <h2>Validate Confirmation Number</h2>
+        <mat-icon (click)="closeDialog()">cancel</mat-icon>
+    </div>
+    <div class="dialog-container">
+        <div class="dialog-content">
+            <div class="guest-info">
+                <div class="guest-name">
+                    <div class="guestType">
+                        <h4>{{guestDetails.name}}</h4>
+                        <span>{{guestDetails.guestType}}</span>
+                    </div>
+                    <span>{{guestDetails.name}}</span>
+                </div>
+                <div class="guest-contacts-info">
+                    <mat-icon>calendar_today</mat-icon>
+                    <span>{{guestDetails.reservationStartDate}}--<span class="stay-count">4 Nights</span>--{{guestDetails.reservationEndDate}}</span>
+                    <mat-icon>people</mat-icon>
+                    <span>{{guestDetails.guestCount}}</span>
+                    <mat-icon>mail</mat-icon>
+                    <span>{{guestDetails.email}}</span>
+
+                    <mat-icon> phone</mat-icon>
+                    <span>{{guestDetails.contact}}</span>
+
+                </div>
+
+            </div>
+            <div class="guest-action">
+                <h6>Guest Action</h6>
+                <div class="verifivation-checkbox">
+                    <input type="checkbox"/>
+                    <div class="checkbox-info">
+                        <h4>{{kioskMessageConst.verifyIdManually}}</h4>
+                        <p>{{kioskMessageConst.verifyIdManualMessage}}</p>
+                    </div>
+
+                </div>
+                <div  class="verifivation-checkbox">
+                    <input type="checkbox"/>
+                    <div class="checkbox-info">
+                        <h4>{{kioskMessageConst.sendQrToGuest}}</h4>
+                        <p>{{kioskMessageConst.sendQrToGuestMessage}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dialog-btn">
+            <button mat-stroked-button>Cancel</button>
+            <button mat-stroked-button> Confirm</button> 
+        </div>
+
+    </div>
+
+</div>

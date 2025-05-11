@@ -1,0 +1,19 @@
+<div class="confirmation-dialog">
+    <div class="dialog-header">
+        <h2>Validate Confirmation Number</h2>
+        <mat-icon (click)="closeDialog()">cancel</mat-icon>
+
+    </div>
+    <div class="dialog-container">
+        <div class="dialog-content">
+            <label>Confirmation Number</label>
+            <input class="confirmation-num" type="text" placeholder="E.g. A2NFNSJ2929"/>
+        </div>
+        <div class="dialog-btn">
+            <button mat-stroked-button (click)="closeDialog()">Cancel</button>
+            <button mat-stroked-button (click)="closeDialog(true)"> Confirm</button> 
+        </div>
+
+    </div>
+
+</div>

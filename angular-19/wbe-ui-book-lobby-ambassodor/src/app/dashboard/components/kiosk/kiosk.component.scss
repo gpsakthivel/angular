@@ -1,0 +1,345 @@
+
+  
+  .btn-icon {
+    height: 17px;
+    width: 17px;
+    background-color: #393939;
+    border: none;
+  }
+  
+  .sort-icon {
+    height: 17px;
+    width: 17px;
+    color: white;
+  }
+  
+  ::ng-deep{
+    .mat-sort-header-arrow {
+      position: relative;
+      left: -1.5rem;
+      display: none!important;
+      opacity: 0;
+    }
+    .mat-sort-header-container{
+      justify-content: center;
+    }
+    .mat-mdc-snack-bar-container .mdc-snackbar__surface {
+      background-color: #A21A15 !important;
+    }
+
+  } 
+  
+  
+  
+  .kiosk{
+    height: auto;
+    margin: 0 6%;
+    .container2 {
+      display: flex;
+      justify-content: space-evenly;
+      height: 10%;
+      gap: 5%;
+      align-items: center;
+      .kiosk-status-tab{
+        padding: 1%;
+        width: 20%;
+        background-color: rgb(124, 124, 255);
+        color: white;
+        font-weight: 800;
+        font-size: 18px;
+        border-radius: 3px;
+        height: 70%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .status-icon {
+        display: flex;
+        align-items: center;
+        gap: 13%;
+        span {
+          white-space: nowrap;
+        }
+      }
+  
+    }
+    .total-kiosk-count{
+      display: flex;
+      align-items: center;
+      height: 17%;
+      font-weight: 800;
+      font-size: 20px;
+      gap: 1%;
+      margin: 2% 0%;
+      .kiosk-count{
+        // border-radius: 40%;
+        // height: px;
+        width: 30px;
+        text-align: center;
+        // background-color: #D8DCF0BF;
+        // border: 1px solid #3F51B5;
+        border: 1px solid var(--unnamed-color-3f51b5);
+        background: #D8DCF0BF 0% 0% no-repeat padding-box;
+        border: 1px solid #3F51B5;
+        border-radius: 13px;
+        opacity: 1;
+      }
+    }
+    mat-card{
+      height: auto;
+      display: flex;
+      // align-items: center;
+      // justify-content: center;
+      .filters{
+        margin: 1% 2%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2%;
+        .search{
+          position: relative;
+          align-items: center;
+          display: flex;
+          width: 50%;
+          height: 100%;
+          mat-icon{
+            position: absolute;
+            top: 13%;
+            left: 1%;
+            color: #5f60606e;
+          }
+          input{
+            border-radius: 5%;
+            height: 40px;
+            width: 224px;
+            text-align: center;
+            border: 1px solid #D8DCF0;       
+            border-radius: 8px;
+
+          }
+        }
+        .filter-buttons{
+          width: 50%;
+          display: flex;
+          gap: 2%;
+          align-items: center;
+          justify-content: flex-end;
+          .filter-btn{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 700;
+            border: 1px solid;
+            width: fit-content;
+            padding: 1.5% 2%;
+            border-radius: 8px;
+            white-space: nowrap;
+            border-color: #3F51B5;
+          }
+        }
+       
+      }
+      table{
+        width: 95%;
+        margin: 1% 2%;
+        border: 1px solid #BDC5EB;
+        border-radius: 1%;
+        thead{
+            .mat-sort-header{
+              .mat-sort-header-container{
+                justify-content: center;
+              }
+            }
+         
+        }
+        .header{
+          background-color: #BDC5EB;
+          padding: unset !important;
+          .mat-sort-header-container{
+            justify-content: center;
+          }
+
+        }
+        td {
+          text-align: center;
+          .table-test-info{
+            padding: 5px;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+
+  }
+  :host ::ng-deep{
+    .mdc-data-table__table{
+      min-width: unset;
+    }
+  }
+
+  .custom-style{
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    right: 0;
+
+  }
+
+
+  mat-sidenav{
+    right: 0 !important;
+    width: 17%;
+    border-radius: 2% 0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #7090B033;
+    border: 1px solid #D8DCF0;
+    opacity: 1;
+    transform: matrix(-1, 1, 0, 0, 0, 0);
+    .sidenav{
+      .header{   
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       margin: 4%;
+       h3{
+        margin: 0px;
+
+       }
+       .session-title{       
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        h4{    
+          font-size: 16px;
+          padding: unset;
+          white-space: nowrap;
+          margin: unset;
+          font-weight: 800;
+          font-family: Verdana, Arial, sans-serif;
+        }
+        .error-count{
+          width: 30px;
+          text-align: center;
+          border: 1px solid var(--unnamed-color-3f51b5);
+          background: #D8DCF0BF 0% 0% no-repeat padding-box;
+          border: 1px solid red($color: #b94949);
+          border-radius: 13px;
+          opacity: 1;
+
+        }
+       }
+       img{
+        transform: rotate(180deg);
+       }
+
+      }
+      .sidnav-container{    
+        border: 1px solid #BDC5EB;
+        .container{    
+          display: flex;
+          flex-direction: column;
+          margin: 4%;
+          .kiosk-id{
+            font-size: 14px;
+            font-weight:700 ;
+          }
+          .last-session-time{
+            font-size: 10px;
+            color: #939090;
+          }
+          .error-info{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .nav-arrow{
+              background: white;
+              border: 1px solid  #a2b0f8;
+              border-radius: 5px;
+              img{
+                color: #a2b0f8;
+                background-color: white;
+              }
+            }
+            span{          
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 9px;
+              margin: 8% 0px;
+
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes example {
+    0% {
+      background-color: red;
+      left: 0px;
+      top: 0px;
+    }
+    50% {
+      background-color: yellow;
+      left: 0px;
+      top: 200px;
+    }
+    100% {
+      background-color: yellow;
+      left: 0px;
+      top: 0px;
+    }
+  }
+
+  ::ng-deep .custom-snackbar .mat-mdc-snack-bar-container {
+    box-shadow: none !important;
+    background: none !important;
+    overflow: visible !important; /* Allow animations to be visible */
+  }
+  
+  /* Override Material Snackbar */
+  ::ng-deep.cdk-overlay-pane {
+    animation-name: example !important;
+    animation-duration: 2s !important;
+    animation-iteration-count: infinite !important;
+    border-radius: 40px !important;
+  }
+  
+  ::ng-deep.mdc-snackbar__surface {
+    border-radius: 40px !important;
+  }
+
+  .snackbar-content {
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    animation: slide-in 1s ease-in-out, bounce 1.5s infinite;
+  }
+
+  /* Slide-In Animation */
+  @keyframes slide-in {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  /* Bounce Animation */
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+
+ 

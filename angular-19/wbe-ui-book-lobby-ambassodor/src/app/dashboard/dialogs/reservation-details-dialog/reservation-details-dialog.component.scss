@@ -1,0 +1,102 @@
+.confirmation-dialog{
+    border-radius: 5%;
+    .dialog-header{
+        display: flex;
+        justify-content: space-between; 
+        background-color: #D2D6EE;
+        padding: 1%;
+        align-items: center;
+        padding: 0 3%;
+        h2{
+            font-size: 19px;
+            font-family: Roboto;
+        }
+
+    }
+    .dialog-container{
+        margin: 2%;
+        .dialog-content{
+            display: grid;
+            margin: 5% 3%;
+            input{
+               height: 100%;
+               padding-left: 2%;
+               margin-top: 3%;
+               border-radius: 5px;
+               border: 1px solid #BFBFBF;
+            }
+            .guest-info{
+                .guest-name{
+                    margin-bottom: 3%;
+                    .guestType{            
+                        display: flex;
+                        align-items: center;
+                        gap: 5%;
+                        h4{
+                           font-size: 22px;
+                           line-height: 0px;
+                        }
+                        span{
+                           
+                         padding: 5px 10px;
+                         border: 1px solid #3fd33f;
+                         background: #c4f3c4;
+                         color: #3fd33f;
+                         border-radius: 9px;
+       
+                        }
+          
+                    }
+                    span{               
+                      font-size: 20px;
+                      color: #b9b7b4;
+                    }
+                }
+                .guest-contacts-info{              
+                   display: grid;
+                   grid-template-columns: repeat(2, 0fr);
+                   width: fit-content;
+                   gap: 13%;
+                   white-space: nowrap;
+                }
+             
+            }
+            .guest-action{                   
+                margin-top: 6%;
+                h6{
+                  
+                 font-size: 16px;
+                 line-height: 0px;
+                 margin-bottom: 3%;
+
+                }
+                .verifivation-checkbox{
+                  
+                  display: flex;
+                  align-items: start;
+                  gap: 2%;
+                  input{
+                      
+                    width: 21px;
+                    height: 21px;
+                  }
+                  .checkbox-info{
+                      h4{
+                          line-height: 0px
+                      }
+                  }
+                }
+
+            }
+        };
+        .dialog-btn{
+            display: flex;
+            float: right;
+            gap: 2%;
+            margin-top: 4%;
+            margin-right: 3%;
+
+        }
+    }
+
+}

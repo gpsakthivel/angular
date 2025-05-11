@@ -1,0 +1,27 @@
+<div class="root-component">
+  <app-header></app-header>
+  <mat-sidenav-container autosize>
+    <mat-sidenav #sidenav fixedInViewport="true" mode="side" opened="{{ isExpanded }}">
+        <section [class.sidenav]="isExpanded">
+            <div class="toggle">
+              <!-- <mat-icon (click)="openSideNav()">
+                {{ isExpanded ? "keyboard_backspace" : "dehaze" }}
+              </mat-icon> -->
+              <img src='../../../assets/icons/Sidemenu.svg' height="25px" alt="" />
+            </div>
+            <mat-list class="nav" *ngFor="let route of routeLinks">
+              <a mat-list-item routerLinkActive="active-link" class="hover" routerLink="{{ route.link }}">
+                <img [src]="'../../../assets/icons/' + getRandomIcon(route)" height="25px" alt="" />
+                <p matLine *ngIf="isExpanded">{{ route.name }}</p>
+              </a>
+            </mat-list>
+          </section>
+        </mat-sidenav>
+    <mat-sidenav-content>
+    <!-- <mat-sidenav-content [style.margin-left.px]="!isExpanded ? 60 : 250"> -->
+      <div class="content-container">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

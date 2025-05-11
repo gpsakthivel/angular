@@ -1,0 +1,49 @@
+.header-container{
+    height: 10%;
+    width: 100%;
+    background: #25306C 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .user{
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        color: white;
+        height: 100%;
+        margin-right: 3%;
+        min-width: 11%;
+        .user-logo{
+            background-color: blueviolet;
+            color: white;
+            font-weight: 800;
+            font-size: 16px;
+            border-radius: 50%;
+            width: 23%;
+            height: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 7%;
+        }
+        span{
+            font-size: 14px;
+            font-family: 'Courier New', Courier, monospace;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+        }
+        .icon{
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            margin-left: 7%;
+
+
+        }
+    }
+}

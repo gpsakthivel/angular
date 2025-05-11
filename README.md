@@ -3,7 +3,7 @@
 ## Important note: 
 - Use the below command to install different angular version.
 ```bash
-npx -p @angular/cli@8 ng new sample-application --style=scss
+npx -p @angular/cli@8 ng new sample-application --style=scss --inline-style --inline-template --routing 
 ```
 - Reference: [stackoverflow](https://stackoverflow.com/questions/54184357/npx-with-angular-cli-how-to-install-angular-cli-and-use-it-afterwards)
 - If the node version is changed using nvm for different angular version, use the below command to run the application.
@@ -24,7 +24,7 @@ node ./node_modules/@angular/cli/bin/ng serve
     - You haven’t installed dependencies (npm install)
     - @angular/cli isn’t in package.json
 
-## angular-2
+<!-- ## angular-2
 - hello-world
 - 
 - 
@@ -37,7 +37,7 @@ node ./node_modules/@angular/cli/bin/ng serve
 ## angular-5
 - hello-world
 - 
-- 
+-  -->
 
 ## angular-6
 - hello-world
@@ -99,12 +99,19 @@ node ./node_modules/@angular/cli/bin/ng serve
 ## angular-17
 - hello-world
 - dev-proxy
+- Reference: https://www.syncfusion.com/blogs/post/resolve-cors-errors-angular-proxy
 - 
 
 ## angular-18
 - hello-world
+- ng-app
+- Reference: https://www.youtube.com/watch?v=oUmVFHlwZsI
 - 
 
 ## angular-19
 - hello-world
+- lobby-ambassador
+- sample-application
+- spend-ui
+- wbe-ui-book-lobby-ambassodor
 - 

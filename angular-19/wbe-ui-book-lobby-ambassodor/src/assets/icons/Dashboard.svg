@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g class="cls-2">
+    <g id="Group_209278-2">
+      <path id="space_dashboard_24dp_5F6368_FILL0_wght400_GRAD0_opsz24" d="M5,21c-.53,0-1.04-.21-1.41-.59-.38-.37-.6-.88-.59-1.41V5c0-.53.2-1.04.59-1.41.37-.38.88-.59,1.41-.59h14c.53,0,1.04.2,1.41.59.38.37.6.88.59,1.41v14c0,.53-.2,1.04-.59,1.41-.37.38-.88.6-1.41.59H5ZM5,19h6V5h-6v14ZM13,19h6v-7h-6v7ZM13,10h6v-5h-6v5Z"/>
+    </g>
+  </g>
+</svg>

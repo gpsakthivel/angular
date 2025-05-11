@@ -1,0 +1,139 @@
+<mat-card class="card-container">
+    <div class="header-stepper">
+        <div class="container1">
+            <div class="kiosk-details">
+                <mat-icon (click)="backNavigator()">arrow_back</mat-icon>
+                <span>{{kioskDetailedStatus.kioskId}}</span>
+                <span class="kiosk-status" [ngStyle]="{'color':kioskStatusProperty.color, 'background':kioskStatusProperty.background }">{{kioskDetailedStatus.status}}</span>
+            </div>
+            <div class="button">
+                <button mat-stroked-button> Turn On Kiosk</button>
+                <button mat-stroked-button> View Error History</button>                  
+            </div>
+        </div>
+        <div class="user-info">
+            <div class="user-name-id">
+                <div class="guestType">
+                  <h4>{{kioskUserDetail.name}}</h4>
+                  <span>{{kioskUserDetail.guestType}}</span>
+                </div>
+                <span>{{kioskUserDetail.userId}}</span>
+            </div>
+            <div class="user-contact">
+                <span>{{kioskUserDetail.contact}}</span>
+                <span>{{kioskUserDetail.email}}</span>  
+            </div>
+            <div class="view-details-text">
+                <span>View Details</span>
+            </div>
+
+        </div>
+        <div class="container2"> 
+            <div class="current-status">
+                <mat-icon>cancel</mat-icon>
+                <span>{{kioskDetails.failureReason}}</span>
+            </div>
+            <div class="time-stamp-key">
+                <div class="alter-time info">
+                    <span>Alert Time Stamp</span>
+                    <span>{{kioskDetails.timeStamp}}</span>
+
+                </div>
+                <div class="pending-keys info">
+                    <span>No Of Attempts</span>
+                    <span>{{kioskDetails.pendingKeys}}</span>
+
+                </div>
+                <div class="usage-time info">
+                    <span>Usage Time</span>
+                    <span>{{kioskDetails.ussageTime}}</span>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+  
+    
+    <div class="guest-journy-stepper">
+        <h4>
+            Guest Journey
+        </h4>
+          
+        <!-- <mat-vertical-stepper [linear]="false" #stepper > -->
+          <mat-vertical-stepper  #stepper>
+
+            <mat-step>
+              <form >
+                <ng-template matStepLabel>{{kioskMessageConst.idVerification}}</ng-template>
+               
+                <div class="btn">
+                  <button mat-stroked-button (click)="openConfirmationDialog()">{{kioskMessageConst.validateResrevationConfirmNo}}</button>
+                  <button mat-stroked-button>{{kioskMessageConst.goToTodaysArrival}}</button>                  
+                </div>
+              </form>
+            </mat-step>
+            <mat-step>
+              <!-- <form [formGroup]="secondFormGroup">
+                <ng-template matStepLabel>{{kioskMessageConst.reservationConfirmation}}</ng-template>
+                <mat-form-field>
+                  <input matInput placeholder="Address" formControlName="secondCtrl" required>
+                </mat-form-field>
+                <div>
+                  <button mat-button matStepperPrevious>Back</button>
+                  <button mat-button matStepperNext>Next</button>
+                </div>
+              </form> -->
+            </mat-step>
+            <mat-step>
+              <!-- <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel>{{kioskMessageConst.reservationSummary}}</ng-template>
+                <mat-form-field>
+                  <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+                </mat-form-field>
+                <div>
+                  <button mat-button matStepperNext>Next</button>
+                </div>
+              </form> -->
+            </mat-step>
+            <mat-step>
+              <!-- <form [formGroup]="secondFormGroup">
+                <ng-template matStepLabel>{{kioskMessageConst.termsAndCondition}}</ng-template>
+                <mat-form-field>
+                  <input matInput placeholder="Address" formControlName="secondCtrl" required>
+                </mat-form-field>
+                <div>
+                  <button mat-button matStepperPrevious>Back</button>
+                  <button mat-button matStepperNext>Next</button>
+                </div>
+              </form> -->
+            </mat-step>
+            <mat-step>
+              <!-- <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel>{{kioskMessageConst.payment}}</ng-template>
+                <mat-form-field>
+                  <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+                </mat-form-field>
+                <div>
+                  <button mat-button matStepperNext>Next</button>
+                </div>
+              </form> -->
+            </mat-step>
+            <mat-step>
+              <!-- <form [formGroup]="secondFormGroup">
+                <ng-template matStepLabel>{{kioskMessageConst.keyPrint}}</ng-template>
+                <mat-form-field>
+                  <input matInput placeholder="Address" formControlName="secondCtrl" required>
+                </mat-form-field>
+                <div>
+                  <button mat-button matStepperPrevious>Back</button>
+                  <button mat-button matStepperNext>Next</button>
+                </div>
+              </form> -->
+            </mat-step>
+        </mat-vertical-stepper>
+          
+
+    </div>
+
+</mat-card>

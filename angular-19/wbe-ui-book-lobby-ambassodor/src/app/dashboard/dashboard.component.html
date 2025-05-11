@@ -1,0 +1,36 @@
+<div class="dashboard">
+    <div class="dashboard-header">
+        <div class="container1">
+            <div class="menu">
+                <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                    <mat-button-toggle value="kiosk" (change)="onValChange($event.value)">
+                        <img src='../../assets/icons/Kiosk.svg' height="25px" alt="" />
+                        Kiosk</mat-button-toggle>
+                    <mat-button-toggle value="italic" (change)="onValChange($event.value)">
+                        <img src='../../assets/icons/Todaysarrival.svg' height="25px" alt="" />Today's Arrival</mat-button-toggle>
+                </mat-button-toggle-group>
+            </div>
+            <div class="filter-selector">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Choose a date</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker touchUi #picker></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <!-- <mat-label>Toppings</mat-label> -->
+                    <mat-select [value]="lounges[0]">
+                      @for (loung of lounges; track loung) {
+                        <mat-option [value]="loung">{{loung}}</mat-option>
+                      }
+                    </mat-select>
+                  </mat-form-field>
+            </div>
+        </div>
+    </div>
+    <div class="child-rout">
+        <router-outlet></router-outlet>
+    </div>
+</div>

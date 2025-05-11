@@ -1,0 +1,1558 @@
+// /*style.scss start*/
+// /* You can add global styles to this file, and also import other style files */
+// @use '@angular/material' as mat;
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+// // @import '@angular/material/theming';
+// @import '@angular/material/prebuilt-themes/indigo-pink.css';
+// // @import '~bootstrap/dist/css/bootstrap.min.css';
+// // @import '../node_modules/angular-calendar/css/angular-calendar.css';
+// // @import '~quill/dist/quill.snow.css';
+// // @import '~quill/dist/quill.bubble.css';
+
+// /*theme scss*/
+
+// $book-primary: var(--dynamic-theme-primary);
+// $book-accent: var(--dynamic-theme-secondary);
+
+// // @use '@material/theme' with (
+// //   $primary: $book-primary,
+// //   $on-primary: $book-accent
+// // );
+
+// $dynamic-theme-primary: (
+//   50: var(--theme-primary-50),
+//   100: var(--theme-primary-100),
+//   200: var(--theme-primary-200),
+//   300: var(--theme-primary-300),
+//   400: var(--theme-primary-400),
+//   500: var(--theme-primary-500),
+//   600: var(--theme-primary-600),
+//   700: var(--theme-primary-700),
+//   800: var(--theme-primary-800),
+//   900: var(--theme-primary-900),
+//   A100: var(--theme-primary-A100),
+//   A200: var(--theme-primary-A200),
+//   A400: var(--theme-primary-A400),
+//   A700: var(--theme-primary-A700),
+//   contrast: (
+//     50: var(--theme-primary-contrast-50),
+//     100: var(--theme-primary-contrast-100),
+//     200: var(--theme-primary-contrast-200),
+//     300: var(--theme-primary-contrast-300),
+//     400: var(--theme-primary-contrast-400),
+//     500: var(--theme-primary-contrast-500),
+//     600: var(--theme-primary-contrast-600),
+//     700: var(--theme-primary-contrast-700),
+//     800: var(--theme-primary-contrast-800),
+//     900: var(--theme-primary-contrast-900),
+//     A100: var(--theme-primary-contrast-A100),
+//     A200: var(--theme-primary-contrast-A200),
+//     A400: var(--theme-primary-contrast-A400),
+//     A700: var(--theme-primary-contrast-A700),
+//   ),
+// );
+// $dynamic-theme-secondary: (
+//   50: var(--theme-secondary-50),
+//   100: var(--theme-secondary-100),
+//   200: var(--theme-secondary-200),
+//   300: var(--theme-secondary-300),
+//   400: var(--theme-secondary-400),
+//   500: var(--theme-secondary-500),
+//   600: var(--theme-secondary-600),
+//   700: var(--theme-secondary-700),
+//   800: var(--theme-secondary-800),
+//   900: var(--theme-secondary-900),
+//   A100: var(--theme-secondary-A100),
+//   A200: var(--theme-secondary-A200),
+//   A400: var(--theme-secondary-A400),
+//   A700: var(--theme-secondary-A700),
+//   contrast: (
+//     50: var(--theme-secondary-contrast-50),
+//     100: var(--theme-secondary-contrast-100),
+//     200: var(--theme-secondary-contrast-200),
+//     300: var(--theme-secondary-contrast-300),
+//     400: var(--theme-secondary-contrast-400),
+//     500: var(--theme-secondary-contrast-500),
+//     600: var(--theme-secondary-contrast-600),
+//     700: var(--theme-secondary-contrast-700),
+//     800: var(--theme-secondary-contrast-800),
+//     900: var(--theme-secondary-contrast-900),
+//     A100: var(--theme-secondary-contrast-A100),
+//     A200: var(--theme-secondary-contrast-A200),
+//     A400: var(--theme-secondary-contrast-A400),
+//     A700: var(--theme-secondary-contrast-A700),
+//   ),
+// );
+// $dynamic-theme-warn: (
+//   50: var(--theme-warn-50),
+//   100: var(--theme-warn-100),
+//   200: var(--theme-warn-200),
+//   300: var(--theme-warn-300),
+//   400: var(--theme-warn-400),
+//   500: var(--theme-warn-500),
+//   600: var(--theme-warn-600),
+//   700: var(--theme-warn-700),
+//   800: var(--theme-warn-800),
+//   900: var(--theme-warn-900),
+//   A100: var(--theme-warn-A100),
+//   A200: var(--theme-warn-A200),
+//   A400: var(--theme-warn-A400),
+//   A700: var(--theme-warn-A700),
+//   contrast: (
+//     50: var(--theme-warn-contrast-50),
+//     100: var(--theme-warn-contrast-100),
+//     200: var(--theme-warn-contrast-200),
+//     300: var(--theme-warn-contrast-300),
+//     400: var(--theme-warn-contrast-400),
+//     500: var(--theme-warn-contrast-500),
+//     600: var(--theme-warn-contrast-600),
+//     700: var(--theme-warn-contrast-700),
+//     800: var(--theme-warn-contrast-800),
+//     900: var(--theme-warn-contrast-900),
+//     A100: var(--theme-warn-contrast-A100),
+//     A200: var(--theme-warn-contrast-A200),
+//     A400: var(--theme-warn-contrast-A400),
+//     A700: var(--theme-warn-contrast-A700),
+//   ),
+// );
+// // The warn palette is optional (defaults to red).
+
+// $book-warn: var(--dynamic-theme-warn);
+// // Create the theme object (a Sass map containing all of the palettes).
+// $book-theme: mat.define-light-theme(
+//   mat.define-palette($dynamic-theme-primary),
+//   mat.define-palette($dynamic-theme-secondary),
+//   mat.define-palette($dynamic-theme-warn)
+// );
+
+// // Copy the palettes from your selected theme (usually theme.scss).
+// $app-warn: mat.define-palette(mat.$red-palette);
+// $app-primary: mat.define-palette(mat.$blue-palette);
+// $app-accent: mat.define-palette(mat.$teal-palette);
+
+// // Create your Sass color vars (will be available in all the project)
+// $primary: mat.get-color-from-palette($app-primary);
+// $accent: mat.get-color-from-palette($app-accent);
+// $warn: mat.get-color-from-palette($app-warn);
+
+// $primary-background: mat.get-color-from-palette(mat.$red-palette);
+// $secondary-background: mat.get-color-from-palette(mat.$grey-palette);
+// //$primary-text: mat.get-color-from-palette($mat-white);
+// //$secondary-text: mat.get-color-from-palette($mat-black);
+
+// @include mat.button-theme($book-theme);
+// @include mat.dialog-theme($book-theme);
+// @include mat.tabs-theme($book-theme);
+// @include mat.option-theme($book-theme);
+// @include mat.select-theme($book-theme);
+// @include mat.list-theme($book-theme);
+// @include mat.all-component-themes($book-theme);
+// @include mat.pseudo-checkbox-theme($book-theme);
+// @include mat.pseudo-checkbox-color($book-theme);
+
+// ::ng-deep .mat-pseudo-checkbox-checked {
+//   background-color: var(--book-primary-background) !important;
+// }
+
+// mat-chip.mat-accent {
+//   background-color: var(--book-primary-background) !important;
+//   color: var(--theme-primary-50) !important;
+// }
+
+// /*theme scss end*/
+
+// $custom-typography: mat.define-typography-config(
+//   $font-family: 'inherit',
+// );
+
+// // @include mat.core($custom-typography);
+
+// .refactor-space-issue.refactor-mr-3 {
+//   margin-right: 3px;
+// }
+// .refactor-space-issue.refactor-ml-7 {
+//   margin-left: 7px;
+// }
+// .refactor-space-issue.refactor-ml-4 {
+//   margin-left: 4px;
+// }
+
+// .mdc-h4,
+// .mdc-subheading-1,
+// .mdc-typography .mdc-h4,
+// .mdc-typography .mdc-subheading-1,
+// .mdc-typography h4 {
+//   font:
+//     400 15px / 24px Roboto,
+//     Helvetica Neue,
+//     sans-serif;
+//   letter-spacing: normal;
+//   margin: 0 0 16px;
+// }
+
+// .mdc-card {
+//   transition: box-shadow 280ms;
+//   display: block;
+//   position: relative;
+//   padding: 16px;
+//   border-radius: 4px;
+// }
+
+// //.mat-mdc-form-field-subscript-wrapper {
+// //  height: 0 !important;
+// //  display: none !important;
+// //}
+
+// span {
+//   font-family:
+//     Roboto,
+//     Helvetica Neue,
+//     sans-serif;
+// }
+
+// .mat-mdc-chip.mat-primary.mat-chip-selected {
+//   background-color: var(--theme-primary-500) !important;
+//   color: var(--theme-primary-contrast-500) !important;
+// }
+// .add-minHeight {
+//   min-height: 90px !important;
+// }
+// .mat-mdc-chip {
+//   border: 0 !important;
+// }
+// /* Kiosk Keyboard */
+
+// .ui-keyboard-button {
+//   height: 2em;
+//   border: 1px solid #d3d3d3;
+//   // background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+//   font-weight: normal;
+//   color: #555555;
+//   min-width: 2em;
+//   margin: 0.1em;
+//   font-family: Verdana, Arial, sans-serif;
+//   font-size: 25px !important;
+//   cursor: pointer;
+//   overflow: hidden;
+//   line-height: 2em;
+// }
+
+// .ui-keyboard {
+//   margin-top: -10px;
+//   background: white;
+//   padding: 10px;
+//   border-radius: 5px;
+//   border: 1px solid antiquewhite;
+//   box-shadow:
+//     rgba(0, 0, 0, 0.25) 0px 14px 28px,
+//     rgba(0, 0, 0, 0.22) 0px 10px 10px;
+// }
+
+// .ui-keyboard-button:hover,
+// .ui-keyboard-button:active {
+//   border: 1px solid #d3d3d3;
+//   background: white;
+//   font-weight: normal;
+//   color: #555555;
+// }
+
+// .ui-keyboard-accept {
+//   border-color: #0c0;
+//   background: #080;
+//   color: #fff;
+//   &:hover {
+//     background: #0a0;
+//   }
+// }
+
+// .ui-keyboard-preview {
+//   font-size: 30px !important;
+// }
+
+// .ui-keyboard-button {
+//   height: 2.5em !important;
+//   width: 80px;
+// }
+
+// .ui-keyboard-tab,
+// .ui-keyboard-bksp,
+// .ui-keyboard-enter {
+//   width: 80px;
+// }
+
+// .ui-keyboard-enter {
+//   width: 248px;
+// }
+
+// .ui-keyboard-accept {
+//   width: 114px;
+// }
+
+// .ui-keyboard-shift {
+//   width: 164px;
+// }
+
+// .ui-keyboard-space {
+//   width: 470px;
+// }
+
+// .ui-keyboard {
+//   width: 865px;
+// }
+
+// .onecartAppContainer .mat-drawer-content {
+//   display: initial !important;
+// }
+
+// .booking-progress-loader {
+//   .mat-progress-bar {
+//     height: 8px !important;
+//     border-radius: 5px !important;
+//   }
+// }
+
+// // Kiosk Timer Styles
+// .remainder {
+//   margin: auto;
+//   width: 400px;
+//   right: 50px;
+//   text-align: center;
+//   position: absolute;
+//   top: 10%;
+//   z-index: 1000002;
+//   left: 50px;
+//   overflow: hidden;
+//   display: none;
+// }
+
+// .path--background {
+//   fill: #c33f3a;
+//   stroke: #fff;
+//   stroke-width: 0px;
+// }
+
+// .pulse {
+//   fill: #c33f3a;
+// }
+
+// .path--foreground {
+//   fill: #eee;
+//   stroke: #eee;
+//   stroke-width: 2px;
+// }
+
+// #kiosk-timer-container.remainder .label {
+//   font-size: 90px;
+//   font-weight: 900;
+//   text-anchor: middle;
+//   fill: #c33f3a;
+// }
+
+// @media (max-width: 425px) {
+//   .ngx-mat-timepicker-dialog {
+//     max-width: 90vw !important;
+//   }
+// }
+// .ngx-mat-timepicker-dialog {
+//   max-height: 80vh;
+//   ngx-mat-timepicker-dialog .mat-mdc-dialog-content {
+//     overflow: hidden;
+//   }
+// }
+
+// .resort-fee-description {
+//   max-width: 100%;
+//   img {
+//     width: 100%;
+//   }
+// }
+
+// /*style.scss end*/
+
+// /*preloader CSS start*/
+// /* You can add global styles to this file, and also import other style files */
+
+// a {
+//   font-family:
+//     Roboto,
+//     Helvetica Neue,
+//     sans-serif !important;
+//   letter-spacing: 1px !important;
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p,
+// div {
+//   font-family:
+//     Roboto,
+//     Helvetica Neue,
+//     sans-serif !important;
+//   letter-spacing: normal !important;
+// }
+
+// $preloader-bg: #000000 !default;
+// $preloader-wd: 400px;
+// $preloader-hg: 250px;
+// @media screen and (max-width: 430px) {
+//   .preloaderapp-progress {
+//     width: 80vw !important;
+//     height: auto !important;
+//     background-size: 80vw auto !important;
+//     background-repeat: no-repeat !important;
+//     background-position: center !important;
+//   }
+//   .preloaderapp-progress-bar {
+//     background-size: 80vw auto !important;
+//     background-repeat: no-repeat !important;
+//     background-position-y: center !important;
+//   }
+// }
+
+// @mixin transition-transform($transition...) {
+//   -webkit-transition: -webkit-transform $transition;
+//   -moz-transition: -moz-transform $transition;
+//   -o-transition: -o-transform $transition;
+//   transition: transform $transition;
+// }
+
+// @mixin scale($ratio...) {
+//   -webkit-transform: scale($ratio);
+//   -ms-transform: scale($ratio);
+//   -o-transform: scale($ratio);
+//   transform: scale($ratio);
+// }
+
+// .preloaderapp {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
+//   background-color: $preloader-bg;
+//   background-image: -webkit-linear-gradient(
+//     90deg,
+//     $preloader-bg 10%,
+//     darken($preloader-bg, 5%) 90%
+//   );
+//   background-image: -moz-linear-gradient(
+//     90deg,
+//     $preloader-bg 10%,
+//     darken($preloader-bg, 5%) 90%
+//   );
+//   background-image: -ms-linear-gradient(
+//     90deg,
+//     $preloader-bg 10%,
+//     darken($preloader-bg, 5%) 90%
+//   );
+//   background-image: -o-linear-gradient(
+//     90deg,
+//     $preloader-bg 10%,
+//     darken($preloader-bg, 5%) 90%
+//   );
+//   background-image: linear-gradient(
+//     90deg,
+//     $preloader-bg 10%,
+//     darken($preloader-bg, 5%) 90%
+//   );
+//   z-index: 9999;
+//   transition: all opacity 0.65s;
+// }
+
+// .preloaderapp-progress {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   width: $preloader-wd;
+//   height: $preloader-hg;
+//   margin: auto;
+//   overflow: hidden;
+//   background-size: $preloader-wd $preloader-hg;
+// }
+
+// .preloaderapp-progress-bar {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   width: 0;
+//   overflow: hidden;
+//   background-size: $preloader-wd $preloader-hg;
+// }
+
+// @keyframes progressbar-animation {
+//   from {
+//     width: 0%;
+//   }
+//   to {
+//     width: 95%;
+//   }
+// }
+
+// .preloaderapp-progress-bar.active {
+//   animation: progressbar-animation 10s 1;
+// }
+// .preloaderapp-progress-bar.animation-complete {
+//   width: 100%;
+// }
+
+// .preloaderapp-hidden {
+//   display: none;
+// }
+
+// .preloaderapp-hidden-add {
+//   opacity: 1;
+//   display: block;
+//   .preloaderapp-progress {
+//     transition: transform 0.4s ease;
+//     transform: scale(0);
+//   }
+// }
+
+// .preloaderapp-hidden-add-active {
+//   opacity: 0;
+// }
+// /*preloader CSS end*/
+
+// /*onecart css */
+// a,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p,
+// div {
+//   font-family: 'Roboto', 'Helvetica Neue', sans-serif !important;
+// }
+
+// span {
+//   font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+// }
+
+// .loginCard {
+//   border-radius: 5px;
+//   max-height: none !important;
+//   max-width: 500px !important;
+//   width: 100% !important;
+// }
+
+// .loginCard {
+//   .mat-mdc-dialog-container {
+//     position: relative;
+//   }
+// }
+
+// .cdk-overlay-container {
+//   position: fixed;
+//   z-index: 9999 !important;
+// }
+
+// .popover-content {
+//   box-shadow: rgba(34, 34, 34, 0.29) 0px 0px 20px 1px !important;
+//   border: 0px !important;
+//   width: 100% !important;
+// }
+
+// .popover .arrow {
+//   display: none !important;
+// }
+
+// /* width */
+
+// ::-webkit-scrollbar {
+//   width: 5px;
+//   height: 5px;
+// }
+
+// /* Track */
+
+// ::-webkit-scrollbar-track {
+//   background: #f1f1f1;
+// }
+
+// /* Handle */
+
+// ::-webkit-scrollbar-thumb {
+//   background: #888;
+// }
+
+// :host ::ng-deep .mat-mdc-text-field-wrapper {
+//   padding-bottom: 0px;
+// }
+
+// /* Handle on hover */
+
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #555;
+// }
+
+// .filterRow [class*='col-'] {
+//   transition:
+//     flex 0.5s ease-in-out,
+//     max-width 0.5s ease-in-out,
+//     min-width 0.5s ease-in-out;
+// }
+
+// .filterRow {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .optionsCard {
+//   box-shadow:
+//     0px 2px 13px 0px rgba(0, 0, 0, 0.2),
+//     0px 1px 19px 0px rgba(0, 0, 0, 0.14),
+//     0px 1px 20px 0px rgba(0, 0, 0, 0.12) !important;
+//   z-index: 99;
+//   min-height: 50px;
+// }
+
+// // .filterPosition {
+// //   transform: translate(-50%, 0%);
+// //   left: 50%;
+// // }
+
+// ::ng-deep .mat-calendar-cell-semi-selected {
+//   background-color: var(--book-primary-background) !important;
+// }
+
+// ::ng-deep .mat-calendar-body-begin-range:not(.mat-calendar-body-end-range) {
+//   border-radius: 100% 0 0 100%;
+//   background-color: var(--book-primary-background) !important;
+// }
+
+// ::ng-deep .mat-calendar-body-end-range:not(.mat-calendar-body-begin-range) {
+//   border-radius: 0 100% 100% 0;
+//   background-color: var(--book-primary-background) !important;
+// }
+
+// ::ng-deep .mat-calendar-cell-over > .mat-calendar-body-cell-content {
+//   border: #607d8b 2px solid;
+// }
+
+// :host ::ng-deep .mat-mdc-text-field-wrapper {
+//   padding-bottom: 0px;
+// }
+
+// .cursor-pointer {
+//   cursor: pointer !important;
+// }
+
+// .bg-book-primary {
+//   color: var(--book-primary-text);
+//   background-color: var(--book-primary-background);
+// }
+
+// /* You can add global styles to this file, and also import other style files */
+
+// // @import "@angular/material/prebuilt-themes/indigo-pink.css";
+// // @import "~bootstrap/dist/css/bootstrap.min.css"; // TRYING TO LOAD IN GLOBAL
+// // @import "../../../../node_modules/angular-calendar/css/angular-calendar.css";
+// .offerDetailsDialog .mat-mdc-dialog-container {
+//   padding: 0px !important;
+// }
+
+// .resetOverflow {
+//   overflow: hidden !important;
+// }
+
+// .datePickerDialog {
+//   .mat-mdc-dialog-container {
+//     padding: 0px;
+//     max-height: 75vh;
+//   }
+// }
+
+// /*
+//   ##Device = Tablets, Ipads (portrait)
+//   ##Screen = B/w 768px to 1024px
+// */
+
+// @media (min-width: 768px) and (max-width: 1024px) {
+//   .filterRow [class*='col-'] {
+//     padding: 0px 3px;
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .footer-addr {
+//     p {
+//       span {
+//         width: 100%;
+//         word-wrap: break-word;
+//         white-space: break-spaces;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 480px) {
+//   .filterRow [class*='col-'] {
+//     padding: 0px 3px;
+//   }
+// }
+
+// .cdk-overlay-dark-backdrop {
+//   background: rgba(0, 0, 0, 0.58) !important;
+// }
+
+// .mat-flat-button.mat-primary[disabled],
+// .mat-flat-button.mat-accent[disabled],
+// .mat-flat-button.mat-warn[disabled],
+// .mat-flat-button[disabled][disabled],
+// .mat-mdc-raised-button.mat-primary[disabled],
+// .mat-mdc-raised-button.mat-accent[disabled],
+// .mat-mdc-raised-button.mat-warn[disabled],
+// .mat-mdc-raised-button[disabled][disabled],
+// .mat-fab.mat-primary[disabled],
+// .mat-fab.mat-accent[disabled],
+// .mat-fab.mat-warn[disabled],
+// .mat-fab[disabled][disabled],
+// .mat-mini-fab.mat-primary[disabled],
+// .mat-mini-fab.mat-accent[disabled],
+// .mat-mini-fab.mat-warn[disabled],
+// .mat-mini-fab[disabled][disabled] {
+//   background-color: gainsboro !important;
+// }
+
+// .toast-success {
+//   color: #000000 !important;
+//   background-color: #ffffff !important;
+//   border-left: 5px solid #51a351 !important;
+// //   background-image: url('assets/img/toastrSuccess.jpg') !important;
+// }
+
+// .toast-error {
+//   color: #000000 !important;
+//   background-color: #ffffff !important;
+//   border-left: 5px solid #bd362f !important;
+// //   background-image: url('assets/img/toastrError.png') !important;
+// }
+
+// .toast-info {
+//   color: #000000 !important;
+//   background-color: #ffffff !important;
+//   border-left: 5px solid #2f96b4 !important;
+// //   background-image: url('assets/img/toastrInfo.jpg') !important;
+// }
+
+// .toast-warning {
+//   color: #000000 !important;
+//   background-color: #ffffff !important;
+//   border-left: 5px solid #f89406 !important;
+// //   background-image: url('assets/img/toastrWarning.jpg') !important;
+// }
+
+// .cookiePolicyBackdropClass {
+//   opacity: 0.8 !important;
+//   background-color: #000000;
+// }
+
+// // div.mat-mdc-select-panel,
+// .mat-mdc-chip + .custom-popover-content {
+//   max-width: 280px !important;
+// }
+// .mat-mdc-select-trigger {
+//   opacity: 1 !important;
+//   max-width: 280px !important;
+// }
+
+// @mixin aspect-ratio($width, $height) {
+//   position: relative;
+//   padding-top: calc($height / $width) * 100%;
+//   > img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
+
+// @mixin aspect-ratio5($width, $height) {
+//   position: relative;
+//   padding-top: calc($height / $width) * 100%;
+//   > img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
+
+// @mixin aspect-ratio1($width, $height) {
+//   position: relative;
+//   padding-top: calc($height / $width) * 100%;
+//   .innerCorousel {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     width: 100%;
+//     height: 100%;
+//     .active {
+//       width: 100%;
+//       img {
+//         height: 100.5%;
+//       }
+//     }
+//   }
+// }
+
+// @mixin aspect-ratio4($width, $height) {
+//   position: relative;
+//   padding-top: calc($height / $width) * 100%;
+//   .innerCorousel {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     width: 100%;
+//     height: 100%;
+//     .active {
+//       width: 100%;
+//       height: 100%;
+//       img {
+//         height: 100%;
+//       }
+//     }
+//   }
+// }
+
+// @mixin aspect-ratio3($width, $height) {
+//   position: relative;
+//   padding-top: calc($height / $width) * 100%;
+//   > img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
+
+// .imageSection {
+//   overflow: hidden;
+//   width: 100%;
+//   @include aspect-ratio(2, 1);
+// }
+// .md-drppicker option.disabled,
+// .md-drppicker td.disabled {
+//   color: #999;
+//   cursor: not-allowed;
+//   text-decoration: none !important;
+// }
+
+// .md-drppicker td.active,
+// .md-drppicker td.active:hover {
+//   border-color: transparent !important;
+//   background-color: var(--book-primary) !important;
+//   color: var(--book-primary-text) !important;
+// }
+
+// // .empty-week-column{
+// //   background-color: #fff !important;
+// // }
+
+// // .md-drppicker td.off.in-range.available, .md-drppicker td.off {
+// //   background-color: #fff !important; pointer-events: none; color: #bbb !important;
+// // }
+
+// .empty-week-row {
+//   display: none !important;
+// }
+
+// .md-drppicker td.off.end-date,
+// .md-drppicker td.off.start-date {
+//   background-color: #fff !important;
+//   border-color: transparent !important;
+//   color: #999 !important;
+//   pointer-events: none !important;
+// }
+// .md-drppicker td {
+//   color: #000;
+//   font-weight: 700;
+//   opacity: 1 !important;
+// }
+// .mycustomdate {
+//   opacity: 0.5 !important;
+//   border-radius: 1px !important;
+// }
+
+// .mycustomdate1 {
+//   background-color: #dde2e4 !important;
+//   border-radius: 1px !important;
+// }
+
+// .md-drppicker .btn.btn-default {
+//   color: #000;
+//   background-color: #dcdcdc;
+//   margin-right: 10px;
+// }
+
+// #offerImageCarousel,
+// #courseImageCarousel {
+//   overflow: hidden;
+//   width: 100%;
+//   @include aspect-ratio1(2, 1);
+// }
+
+// #roomImageCarousel {
+//   overflow: hidden;
+//   width: 100%;
+//   @include aspect-ratio4(2, 1);
+// }
+
+// #unitroomImageCarousel {
+//   overflow: hidden;
+//   width: 100%;
+//   @include aspect-ratio4(2, 1);
+// }
+
+// #roomImageCarouselDetails {
+//   overflow: hidden;
+//   width: 100%;
+//   @include aspect-ratio4(2, 1);
+// }
+
+// #mapImageCarouselDetails {
+//   overflow: hidden;
+//   width: 100%;
+//   @include aspect-ratio4(2, 1);
+// }
+
+// .flex-center {
+//   overflow: hidden;
+//   width: 100%;
+//   @include aspect-ratio3(2, 1);
+// }
+
+// #offerDetailImageCarousel,
+// #courseDetailImageCarousel,
+// #courseDetailPopupImageCarousel {
+//   overflow: hidden;
+//   width: 100%;
+//   @include aspect-ratio4(2, 1);
+// }
+
+// .cartProdImag {
+//   overflow: hidden;
+//   width: 100%;
+//   @include aspect-ratio5(2, 1);
+// }
+
+// //ie date picker
+// .mat-form-field:not(.mat-form-field-appearance-legacy)
+//   .mat-mdc-form-field-text-prefix
+//   .mat-datepicker-toggle,
+// .mat-form-field:not(.mat-form-field-appearance-legacy)
+//   .mat-mdc-form-field-text-suffix
+//   .mat-datepicker-toggle {
+//   top: calc(0.59375em - 35px);
+//   position: absolute;
+//   margin-left: -40px;
+// }
+
+// @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+//   /* IE10+ CSS styles go here */
+//   /** IE 11 fixes */
+//   .mat-select-panel {
+//     min-width: inherit !important;
+//   }
+//   .cdk-overlay-pane {
+//     display: block;
+//   }
+//   .popover-content {
+//     width: auto !important;
+//   }
+// }
+
+// mat-card-header {
+//   .mat-card-header-text {
+//     margin: 0px !important;
+//   }
+// }
+// /* WBE-12014 Book UI - All Scroll Bar Re-Design issue fix*/
+// .mdc-dialog__surface::-webkit-scrollbar:vertical,
+// .mdc-dialog__content::-webkit-scrollbar:vertical {
+//   width: 15px !important;
+// }
+
+// .mdc-dialog__surface::-webkit-scrollbar-track:vertical,
+// .mdc-dialog__content::-webkit-scrollbar-track:vertical {
+//   -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+// }
+
+// .mdc-dialog__surface::-webkit-scrollbar-button:end:increment:vertical,
+// .mdc-dialog__content::-webkit-scrollbar-button:end:increment:vertical {
+//   background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQwNC4zMDggNDA0LjMwOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDA0LjMwOCA0MDQuMzA5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTAsMTAxLjA4aDQwNC4zMDhMMjAyLjE1MSwzMDMuMjI5TDAsMTAxLjA4eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+Cjwvc3ZnPgo=);
+// }
+
+// .mdc-dialog__surface::-webkit-scrollbar-button:start:decrement:vertical,
+// .mdc-dialog__content::-webkit-scrollbar-button:start:decrement:vertical {
+//   background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDI1NSAyNTUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1NSAyNTU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZyBpZD0iYXJyb3ctZHJvcC11cCI+CgkJPHBvbHlnb24gcG9pbnRzPSIwLDE5MS4yNSAxMjcuNSw2My43NSAyNTUsMTkxLjI1ICAgIiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPC9zdmc+Cg==);
+// }
+
+// .mdc-dialog__surface::-webkit-scrollbar-button:vertical,
+// .mdc-dialog__content::-webkit-scrollbar-button:vertical {
+//   background-size: 10px 10px;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   align-items: center;
+//   display: flex;
+// }
+
+// .mdc-dialog__surface,
+// .mdc-dialog__content {
+//   overflow-x: hidden;
+// }
+
+// /* WBE-12014 Book UI - All Scroll Bar Re-Design issue fix*/
+
+// .ng2-imgcrop input {
+//   display: block !important;
+//   margin-bottom: 20px;
+// }
+
+// .profileImgUpload mat-dialog-container {
+//   padding: 0px !important;
+// }
+
+// .menu-icons {
+//   font-size: 16px;
+//   margin-right: 5px;
+//   .svg-inline--fa {
+//     width: 30px;
+//   }
+// }
+
+// .card-outter-view {
+//   .mat-card-header-text {
+//     width: 100%;
+//   }
+// }
+
+// .calendar-snackbar {
+//   border-bottom-left-radius: 0px !important;
+//   border-bottom-right-radius: 0px !important;
+// }
+
+// .mobileRoomFilter mat-dialog-container {
+//   padding: 0 !important;
+//   margin-top: 25% !important;
+// }
+
+// .mobileRoomFilterLandscape mat-dialog-container {
+//   padding: 0 !important;
+//   margin-top: 11% !important;
+// }
+// .mobileVillaFilterLandscape mat-dialog-container {
+//   padding: 0 !important;
+//   margin-top: 11% !important;
+// }
+
+// .mobileVillaFilter mat-dialog-container {
+//   padding: 0px !important;
+//   overflow: auto !important;
+// }
+
+// .theme-primary {
+//   color: var(--book-primary);
+// }
+
+// .theme-primary-background {
+//   background-color: var(--book-primary-background) !important;
+// }
+
+// .theme-primary-text {
+//   color: var(--book-primary-text) !important;
+// }
+
+// .theme-accent {
+//   color: var(--book-accent);
+// }
+
+// .theme-accent-text {
+//   color: var(--book-accent-text);
+// }
+
+// .theme-warn {
+//   color: var(--book-warn);
+// }
+
+// .mat-mdc-raised-button {
+//   font-size: 11px;
+// }
+
+// .unit-level-toggle {
+//   .mat-button-toggle-checked {
+//     background-color: var(--book-primary);
+//     color: white;
+//   }
+//   .mat-button-toggle-button {
+//     outline: none;
+//   }
+// }
+
+// .p-0 {
+//   padding: 0px !important;
+// }
+// #multiguest-popover > .popover-content {
+//   top: 54px !important;
+//   max-width: 350px !important;
+// }
+
+// /* Address Formatting Styles*/
+
+// .addr {
+//   p {
+//     margin: 0 !important;
+//     font-size: calc(11.62px);
+//     line-height: 20px;
+//     min-height: 20px;
+//   }
+// }
+
+// .addr.guest-addr {
+//   p {
+//     font-size: 15px;
+//     line-height: 24px;
+//   }
+// }
+
+// .addr.footer-addr {
+//   p:first-child {
+//     font-size: 25px;
+//     margin-bottom: 3px !important;
+//     word-break: break-word;
+//     line-height: 1.2;
+//   }
+// }
+
+// // Country code flag dropdown CSS
+
+// .country-name {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   width: 70%;
+//   display: inline-block;
+//   vertical-align: bottom;
+// }
+
+// .w-35 {
+//   width: 35% !important;
+// }
+
+// .w-65 {
+//   width: 65% !important;
+// }
+
+// .roomMobileFilterBackdrop + .cdk-global-overlay-wrapper {
+//   justify-content: center !important;
+//   align-items: flex-start !important;
+// }
+// .villaMobileFilterBackdrop + .cdk-global-overlay-wrapper {
+//   justify-content: center !important;
+//   align-items: flex-start !important;
+// }
+
+// .seatMobileFilterBackdrop + .cdk-global-overlay-wrapper {
+//   justify-content: center !important;
+//   align-items: flex-start !important;
+// }
+
+// .grid-container {
+//   display: grid;
+//   background-color: var(--theme-primary-500);
+//   color: white;
+//   position: sticky;
+//   bottom: 0;
+//   z-index: 15;
+//   height: auto;
+//   grid-template-columns: 60% 40%;
+// }
+
+// @media screen and (max-width: 414px) {
+//   .myResGuestDetails {
+//     width: 97vw !important;
+//     max-width: 100vw !important;
+//   }
+//   ::ng-deep .guestInfoButtonWrapper {
+//     position: fixed;
+//     bottom: 0;
+//     text-align: center;
+//     background-color: #303030;
+//     left: 0;
+//     width: 100vw;
+//     padding: 10px;
+//     z-index: 9999;
+//   }
+// }
+
+// .room-redirect-link {
+//   text-decoration: underline;
+//   color: #03a9f4 !important;
+//   cursor: pointer !important;
+// }
+
+// .room-redirect-link:hover {
+//   text-decoration: underline !important;
+//   color: #03a9f4 !important;
+// }
+
+// .modifyProfileDetailsDialog {
+//   .mat-mdc-dialog-container {
+//     padding: 0px;
+//     position: relative;
+//   }
+// }
+
+// .addActivity {
+//   .bookingSummary {
+//     .addActivityButton {
+//       color: white !important;
+//       padding: 1.3px 10px !important;
+//       border-color: rgb(255 255 255) !important;
+//     }
+//   }
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+// }
+
+// @media (max-width: 480px) {
+//   .addActivity {
+//     .bookingSummary {
+//       .addActivityButton {
+//         font-size: 10px;
+//       }
+//     }
+//     margin: 0;
+//   }
+// }
+
+// .md-drppicker .clear svg {
+//   color: #eb3232;
+//   fill: currentColor;
+//   display: none !important;
+// }
+
+// .md-drppicker.ltr {
+//   direction: ltr;
+//   text-align: left;
+//   width: max-content !important;
+//   margin-top: 1% !important;
+// }
+
+// .form-control {
+//   margin: 5px 0px !important;
+//   height: calc(1.5em + 0.75rem + 15px) !important;
+// }
+
+// .slotFilterContainer .mat-select-value {
+//   display: table-cell;
+//   max-width: 0;
+//   width: 100%;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+// }
+
+// .positionKeyValuePairs {
+//   display: flex;
+//   -webkit-flex-wrap: wrap;
+//   flex-wrap: wrap;
+//   width: 100%;
+//   word-break: break-all;
+// }
+
+// .mat-datepicker-content-container {
+//   box-shadow:
+//     0px 2px 4px -1px rgb(0 0 0 / 20%),
+//     0px 4px 5px 0px rgb(0 0 0 / 14%),
+//     0px 1px 10px 0px rgb(0 0 0 / 12%);
+//   background-color: white;
+//   color: rgba(0, 0, 0, 0.87);
+// }
+// .layoutCss {
+//   margin-top: 50px !important;
+// }
+
+// .onecartHeader {
+//   margin-top: 40px;
+//   padding-top: 10px;
+//   min-height: 100vh;
+//   overflow: hidden;
+//   app-profile-wrapper {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 80vh;
+//     margin-top: 0.95vw;
+//   }
+// }
+
+// // Birds Eye View - Legends
+// .map-legends {
+//   margin-top: 20px;
+
+//   .display-mode {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 12px;
+//   }
+// }
+
+// .isGroup {
+//   padding-top: 10px;
+//   min-height: 100vh;
+//   margin-top: 12px;
+// }
+
+// #example-sidenav-ipad {
+//   z-index: 10000;
+// }
+
+// .profile-header {
+//   margin-top: 0;
+//   padding-top: 0;
+// }
+
+// .image-height {
+//   position: absolute;
+//   margin-right: 15px;
+//   height: 100%;
+// }
+
+// .clearCartBtn {
+//   display: block;
+// }
+
+// .clearCartIcon {
+//   display: none;
+// }
+
+// .clearCart {
+//   color: red;
+//   font-size: 20px;
+// }
+
+// .first-item {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: flex-start;
+//   padding-left: 5vw;
+// }
+// .second-item {
+//   display: flex;
+//   gap: 10px;
+//   align-items: center;
+//   justify-content: right;
+//   margin: 10px 40px 10px;
+// }
+// .ft-size {
+//   font-size: 12px;
+// }
+// .clearCartBtn .mat-stroked-button .mat-button-wrapper {
+//   font-size: 12px;
+// }
+// .viewCart .mat-button-wrapper {
+//   font-size: 12px;
+// }
+
+// .viewCartDiv,
+// .clearCartBtn {
+//   border: 2px solid #fff;
+//   border-radius: 5px;
+// }
+// .mat-mdc-dialog-title::before {
+//   display: none !important;
+// }
+// tr.empty-week-row {
+//   display: table-row !important;
+// }
+// @media (min-width: 0px) and (max-width: 536px) {
+//   .clearCartIcon {
+//     display: block;
+//   }
+//   .clearCartBtn {
+//     display: none;
+//   }
+//   .first-item {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+//   .second-item {
+//     display: flex;
+//     gap: 10px;
+//     align-items: center;
+//     justify-content: right;
+//     margin: 10px 10px;
+//   }
+// }
+
+// @media screen and (max-width: 400px) {
+//   .onecartHeader {
+//     app-profile-wrapper {
+//       height: auto !important;
+//       margin-bottom: 6vw !important;
+//     }
+//   }
+// }
+
+// @media (max-width: 767px) {
+//   #header-parent {
+//     min-height: 230px;
+//   }
+//   #header-parent.filter-active {
+//     min-height: 470px;
+//   }
+//   #header-parent.snc {
+//     min-height: inherit;
+//   }
+
+//   #header-min.snc {
+//     margin-top: 80px !important;
+//   }
+// }
+
+// tr.empty-week-row {
+//   display: table-row !important;
+// }
+// .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs > .mat-mdc-tab-header .mat-mdc-tab {
+//   flex-grow: unset;
+// }
+// .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled)
+//   .mdc-evolution-chip__text-label {
+//   color: inherit !important;
+// }
+// .mat-mdc-chip {
+//   margin: 4px;
+// }
+// .mdc-evolution-chip__action--presentational {
+//   cursor: pointer !important;
+// }
+// .mdc-button .mdc-button__label {
+//   display: flex !important;
+// }
+// .mat-mdc-select-value {
+//   font-size: 14px !important;
+// }
+// .mdc-text-field__input {
+//   font-size: 14px !important;
+// }
+
+// @media screen and (max-width: 768px) {
+//   .guest-info-actions {
+//     font-weight: bold;
+//     bottom: 0;
+//     display: block;
+//     background-color: var(--book-primary-background);
+//     color: var(--book-primary-text);
+//     border-radius: 5px;
+//     box-shadow: 1px 1px 20px 0 rgba(19, 19, 19, 0.41);
+//     -webkit-overflow-scrolling: touch;
+//     margin-bottom: 0;
+//     z-index: 9000;
+//     button {
+//       margin-top: 10px;
+//       margin-bottom: 10px;
+//     }
+//     width: 94%;
+//     padding: 0px 20px;
+//   }
+// }
+
+// #roomImageCarouselDetails .innerCorousel {
+//   text-align: center;
+// }
+
+// .mat-mdc-menu-panel .mat-mdc-menu-content {
+//   padding: 10px !important;
+// }
+
+// .guest-filter-box {
+//   padding: 0px !important;
+//   .roomfilter-rguest-book-messges {
+//     margin-top: 10px !important;
+//     .roomfilter-rguest-placeholder {
+//       font-size: 14px !important;
+//       line-height: 1.2;
+//     }
+//     .roomfilter-guest-count-decrement {
+//       align-items: center !important;
+//       .actionButton.actionButtonLeft {
+//         padding: 0 5px !important;
+//         line-height: 1;
+//         font-size: 0 !important;
+//       }
+//       .actionButton.actionButtonRight {
+//         padding: 0 5px !important;
+//         line-height: 1;
+//         font-size: 0 !important;
+//       }
+//     }
+//   }
+// }
+
+// label.mdc-floating-label.mat-mdc-floating-label {
+//   font-size: 14px !important;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+// }
+// .mat-mdc-form-field-icon-suffix {
+//   position: relative;
+//   right: 1px;
+//   // background-color: #fff !important;
+// }
+// .mdc-button {
+//   font-size: 11px !important;
+//   letter-spacing: normal !important;
+// }
+// .mdc-floating-label {
+//   letter-spacing: normal !important;
+// }
+// @media (max-width: 1024px) {
+//   .onecartAppContainer .mat-drawer-content {
+//     display: initial !important;
+//     z-index: auto;
+//   }
+// }
+// .onecartAppContainer > .mat-drawer-container {
+//   z-index: auto !important;
+// }
+// /*proceed to book font size*/
+// button.proceedToBook {
+//   font-size: 14px !important;
+// }
+// button.proceedToBook span.mdc-button__label {
+//   font-size: inherit;
+// }
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+  }

@@ -1,0 +1,94 @@
+<div class="kiosk">
+  <div class="container2">
+    <div class="kiosk-status-tab" *ngFor="let case of kioskCurrentStatusMenus" [ngStyle]="{ 'background-color': case['color'] }">  
+        <div class="status-icon">
+          <img [src]="'../../../../../../assets/icons/' + getRandomIcon(case.name)" height="25px" alt="'case.name" />
+          <span>{{case?.name}}</span>
+        </div>
+        <div class="status-count">
+            <span>{{case.count}}</span>
+        </div>
+        
+    </div>
+  </div>
+  <div class="total-kiosk-count">
+    <span>Kiosk Details
+      
+    </span>
+    <div class="kiosk-count">
+      {{kisokDetails.length}}
+    </div>
+  </div>
+
+    <mat-card>
+        <div class="filters">
+          <div class="search">
+            <mat-icon>search</mat-icon>
+            <input type="search" placeholder="search kiosk Id"/>
+          </div>
+          <div class="filter-buttons">
+            <div class="filter-btn" *ngFor="let item of kioskCurrentStatusMenus" (click)="filterTableData(item.name)">
+              {{item.name}}
+            </div>
+          </div>
+        </div>
+        <table mat-table [dataSource]="dataSource" matSort>
+          <ng-container *ngFor="let column of columnsToDisplay" [matColumnDef]="column.key">
+            <th class="header" mat-header-cell mat-sort-header *matHeaderCellDef>
+              <span>{{ column.label }}</span>
+            </th>
+            <td mat-cell *matCellDef="let request"><span class="table-test-info" [ngStyle]="setColor(request.status, column.label)">{{ request[column.key] }}</span></td>
+          </ng-container>
+        
+          <tr mat-header-row *matHeaderRowDef="columnKeys"></tr>
+          <tr mat-row *matRowDef="let request; columns: columnKeys"></tr>
+        </table>
+    </mat-card>
+</div>
+
+<mat-sidenav-container autosize>
+  <mat-sidenav #sidenav fixedInViewport="true" mode="side" opened="{{ isExpanded }}">
+      <section [class.sidenav]="isExpanded">
+          <div class="sidenav">
+            <div class="header">
+              <div class="session-title">
+                <h3>Need Assistance</h3>
+                <div class="error-count">
+                  {{4}}
+                </div>
+              </div>
+                <img  class="kiosk-assistance-arrow" src='../../../../assets/icons/kioskAssistanceArrow.svg' height="25px" alt="" (click)="closeSideNav()" />
+            </div>
+            <div>
+              <div *ngFor="let item of sideBarContent"  class="sidnav-container">
+                 <div *ngIf="item.status ==='Error'" class="container">
+                  <span class="kiosk-id">
+                      {{item.kioskId}}
+                  </span>
+                  <div class="error-info">
+                    <span>{{item.guestFlow}}</span>
+                    <button class="nav-arrow" (click)="openKioskStatus(item.kioskId)">
+                      <mat-icon>keyboard_arrow_right</mat-icon>
+                    </button>
+                  </div>
+                  <span class-="last-session-time">
+                    {{item.lastSession}}
+                  </span>
+
+                 </div>
+
+              </div>
+
+            </div>
+          </div>
+            
+        </section>
+      </mat-sidenav>
+  <!-- <mat-sidenav-content> -->
+  <!-- <mat-sidenav-content [style.margin-left.px]="!isExpanded ? 60 : 250"> -->
+    <!-- <div class="content-container"> -->
+      <!-- <router-outlet></router-outlet> -->
+    <!-- </div> -->
+  <!-- </mat-sidenav-content> -->
+</mat-sidenav-container>
+
