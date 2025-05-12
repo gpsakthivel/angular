@@ -77,6 +77,8 @@ node ./node_modules/@angular/cli/bin/ng serve
 
 ## angular-13
 - hello-world
+- mock-server
+- Reference: https://medium.com/geekculture/setting-up-a-mock-backend-with-angular-13-applications-26a21788f7da
 - 
 
 ## angular-14

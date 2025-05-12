@@ -1,0 +1,18 @@
+{
+    "data": {
+        "users": [
+            {
+                "id": 1,
+                "name": "sakthivel palani",
+                "email": "psakthi24vel@gmail.com",
+                "age": 25
+            },
+            {
+                "id": 2,
+                "name": "janarthanan palani",
+                "email": "janarthanan14723@gmail.com",
+                "age": 21
+            }
+        ]
+    }
+}
