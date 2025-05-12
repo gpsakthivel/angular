@@ -77,6 +77,8 @@ node ./node_modules/@angular/cli/bin/ng serve
 
 ## angular-13
 - hello-world
+- mock-api
+- Reference: https://medium.com/ngconf/fake-it-till-you-make-it-or-how-to-mock-backend-response-in-an-angular-application-95ac3a9caf40
 - mock-server
 - Reference: https://medium.com/geekculture/setting-up-a-mock-backend-with-angular-13-applications-26a21788f7da
 - 
@@ -87,6 +89,8 @@ node ./node_modules/@angular/cli/bin/ng serve
 - Reference: [c-sharpcorner](https://www.c-sharpcorner.com/article/how-to-integrate-google-maps-in-angular-14-app/)
 - prettier-husky-setup
 - Reference: [dev.to](https://dev.to/xansiety/angular-14-prettier-husky-setup-4hcm)
+- image-zooming
+- Reference: 
 - 
 
 ## angular-15
