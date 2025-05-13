@@ -66,8 +66,8 @@ node ./node_modules/@angular/cli/bin/ng serve
 
 ## angular-11
 - hello-world
-- 
-- 
+- video-game-db
+- Reference: https://www.youtube.com/watch?v=LiOzTQAz13Q
 
 ## angular-12
 - sample-application
