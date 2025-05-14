@@ -95,6 +95,7 @@ node ./node_modules/@angular/cli/bin/ng serve
 
 ## angular-15
 - sample-application
+- Reference: https://medium.com/better-programming/angular-api-calls-the-right-way-264198bf2c64
 - hello-world
 - 
 
