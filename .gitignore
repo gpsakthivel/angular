@@ -22,7 +22,7 @@
 **/.gitignore
 **/.gitkeep
 # Ignore all spec files
-**/e2e
+# **/e2e
 **/*.spec.ts
 
 # Explanation:
