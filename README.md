@@ -24,44 +24,28 @@ node ./node_modules/@angular/cli/bin/ng serve
     - You haven’t installed dependencies (npm install)
     - @angular/cli isn’t in package.json
 
-<!-- ## angular-2
-- hello-world
-- 
+## angular-2
 - 
 
 ## angular-4
-- hello-world
-- 
 - 
 
 ## angular-5
-- hello-world
 - 
--  -->
 
 ## angular-6
-- hello-world
-- 
 - 
 
 ## angular-7
-- hello-world
-- 
 - 
 
 ## angular-8
-- hello-world
-- 
 - 
 
 ## angular-9
-- hello-world
-- 
 - 
 
 ## angular-10
-- hello-world
-- 
 - 
 
 ## angular-11
@@ -72,53 +56,39 @@ node ./node_modules/@angular/cli/bin/ng serve
 ## angular-12
 - sample-application
 - crud
-- Reference: [syncfusion](https://www.syncfusion.com/blogs/post/build-a-crud-app-in-angular)
-- 
+- Reference: [syncfusion](https://www.syncfusion.com/blogs/post/build-a-crud-app-in-angular) 
 
 ## angular-13
-- hello-world
 - mock-api
 - Reference: https://medium.com/ngconf/fake-it-till-you-make-it-or-how-to-mock-backend-response-in-an-angular-application-95ac3a9caf40
 - mock-server
 - Reference: https://medium.com/geekculture/setting-up-a-mock-backend-with-angular-13-applications-26a21788f7da
-- 
 
 ## angular-14
-- hello-world
 - google-map-integration
 - Reference: [c-sharpcorner](https://www.c-sharpcorner.com/article/how-to-integrate-google-maps-in-angular-14-app/)
 - prettier-husky-setup
 - Reference: [dev.to](https://dev.to/xansiety/angular-14-prettier-husky-setup-4hcm)
 - image-zooming
 - Reference: 
-- 
 
 ## angular-15
 - sample-application
 - Reference: https://medium.com/better-programming/angular-api-calls-the-right-way-264198bf2c64
-- hello-world
-- 
 
 ## angular-16
-- hello-world
 - 
 
 ## angular-17
-- hello-world
 - dev-proxy
 - Reference: https://www.syncfusion.com/blogs/post/resolve-cors-errors-angular-proxy
-- 
 
 ## angular-18
-- hello-world
 - ng-app
 - Reference: https://www.youtube.com/watch?v=oUmVFHlwZsI
-- 
 
 ## angular-19
-- hello-world
 - lobby-ambassador
 - sample-application
 - spend-ui
 - wbe-ui-book-lobby-ambassodor
-- 
