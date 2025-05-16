@@ -25,36 +25,26 @@ node ./node_modules/@angular/cli/bin/ng serve
     - @angular/cli isn’t in package.json
 
 ## angular-2
-- 
 
 ## angular-4
-- 
 
 ## angular-5
-- 
 
 ## angular-6
-- 
 
 ## angular-7
-- 
 
 ## angular-8
-- 
 
 ## angular-9
-- 
 
 ## angular-10
-- 
 
 ## angular-11
-- hello-world
 - video-game-db
 - Reference: https://www.youtube.com/watch?v=LiOzTQAz13Q
 
 ## angular-12
-- sample-application
 - crud
 - Reference: [syncfusion](https://www.syncfusion.com/blogs/post/build-a-crud-app-in-angular) 
 
@@ -71,13 +61,12 @@ node ./node_modules/@angular/cli/bin/ng serve
 - Reference: [dev.to](https://dev.to/xansiety/angular-14-prettier-husky-setup-4hcm)
 - image-zooming
 - Reference: 
+- portfolio
 
 ## angular-15
-- sample-application
-- Reference: https://medium.com/better-programming/angular-api-calls-the-right-way-264198bf2c64
 
 ## angular-16
-- 
+- movies-app
 
 ## angular-17
 - dev-proxy
@@ -88,7 +77,14 @@ node ./node_modules/@angular/cli/bin/ng serve
 - Reference: https://www.youtube.com/watch?v=oUmVFHlwZsI
 
 ## angular-19
-- lobby-ambassador
-- sample-application
-- spend-ui
 - wbe-ui-book-lobby-ambassodor
+
+## angular-20
+
+# To-do
+## Learn:
+- 
+
+## Practise:
+- sample-api-calls-app
+- Reference: https://medium.com/better-programming/angular-api-calls-the-right-way-264198bf2c64
