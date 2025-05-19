@@ -51,8 +51,7 @@ node ./node_modules/@angular/cli/bin/ng serve
 
 ### angular-11
 
-- video-game-db
-- Reference: https://www.youtube.com/watch?v=LiOzTQAz13Q
+- [video-game-db](https://www.youtube.com/watch?v=LiOzTQAz13Q)
 - [rotten-potatoes](https://www.youtube.com/watch?v=sv76HcgjLZM)
 
 ### angular-12
