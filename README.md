@@ -43,6 +43,8 @@ node ./node_modules/@angular/cli/bin/ng serve
 
 ### angular-8
 
+- [tic-tac-toe-pwa](https://www.youtube.com/watch?v=G0bBLvWXBvc)
+
 ### angular-9
 
 ### angular-10
@@ -69,8 +71,7 @@ node ./node_modules/@angular/cli/bin/ng serve
 
 - google-map-integration
 - Reference: [c-sharpcorner](https://www.c-sharpcorner.com/article/how-to-integrate-google-maps-in-angular-14-app/)
-- prettier-husky-setup
-- Reference: [dev.to](https://dev.to/xansiety/angular-14-prettier-husky-setup-4hcm)
+- [prettier-husky-setup](https://dev.to/xansiety/angular-14-prettier-husky-setup-4hcm)
 - image-zooming
 - Reference:
 - portfolio
@@ -109,6 +110,7 @@ node ./node_modules/@angular/cli/bin/ng serve
 - https://www.youtube.com/watch?v=S_wTb4pP_6Q
 - https://www.youtube.com/watch?v=oUmVFHlwZsI
 - https://www.youtube.com/watch?v=BBh3wMVJaso&list=PL3EibBwUnE37aZ937p2L2VoozXUKcsI76
+- https://www.youtube.com/watch?v=EuJsvyFz2kA
 
 ### Practise:
 
