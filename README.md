@@ -96,6 +96,18 @@ node ./node_modules/@angular/cli/bin/ng serve
 ### angular-19
 
 - wbe-ui-book-lobby-ambassodor
+- bank-loan-app
+  https://www.youtube.com/watch?v=aIAs7XYlPHk&list=PL7JmcZV0UQtWxJ4sPWTVS6_ZCZgOqELcm&index=9
+- bus-ticket-booking-app
+  https://www.youtube.com/watch?v=-CbVRyr5HyI&list=PL7JmcZV0UQtWxJ4sPWTVS6_ZCZgOqELcm&index=3
+- employee-management-system
+  https://www.youtube.com/watch?v=z4sN2aIccYM&list=PL7JmcZV0UQtWxJ4sPWTVS6_ZCZgOqELcm&index=10
+- incident-tracking-app
+  https://www.youtube.com/watch?v=4HLUFYrnW5k&list=PL7JmcZV0UQtWxJ4sPWTVS6_ZCZgOqELcm&index=7
+- parking-management-system
+  https://www.youtube.com/watch?v=afNuus87UsY
+- quotation-management-system
+  https://www.youtube.com/watch?v=l3nZ_DC4pMw&list=PL7JmcZV0UQtWxJ4sPWTVS6_ZCZgOqELcm&index=6
 
 ### angular-20
 
@@ -115,3 +127,8 @@ node ./node_modules/@angular/cli/bin/ng serve
 
 - sample-api-calls-app
 - Reference: https://medium.com/better-programming/angular-api-calls-the-right-way-264198bf2c64
+
+### Reference:
+
+- Free code camp channel
+- Learning Partner channel

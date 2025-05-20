@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bigbasket_ecommerse_app": {
+    "bank-loan-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,17 +13,18 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/bigbasket_ecommerse_app",
+            "outputPath": "dist/bank-loan-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-              "src/styles.css"
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
             ],
+            "styles": ["src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -31,13 +32,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
                 }
               ],
               "outputHashing": "all"
@@ -54,34 +55,33 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "bigbasket_ecommerse_app:build:production"
+              "buildTarget": "bank-loan-app:build:production"
             },
             "development": {
-              "buildTarget": "bigbasket_ecommerse_app:build:development"
+              "buildTarget": "bank-loan-app:build:development"
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "buildTarget": "bigbasket_ecommerse_app:build"
-          }
+          "builder": "@angular-devkit/build-angular:extract-i18n"
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
             "styles": ["src/styles.css"],
             "scripts": []
           }
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "e04ef8e2-5d08-4df4-8d87-9dcb74e2149f"
   }
 }
