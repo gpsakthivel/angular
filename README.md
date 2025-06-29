@@ -94,6 +94,9 @@ node ./node_modules/@angular/cli/bin/ng serve
 - Reference: https://www.youtube.com/watch?v=oUmVFHlwZsI
 - login-page
 - https://www.youtube.com/watch?v=gC1k4D2EpK4
+- ecommerce-app
+- learning-management-system
+- https://www.youtube.com/watch?v=riFt5HshuUk
 
 ### angular-19
 

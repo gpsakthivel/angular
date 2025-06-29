@@ -1,0 +1,58 @@
+<div class="container">
+  
+    <!-- New @for loop -->
+    <ul>
+      @for (user of users; track user.id; let index = $index) {
+        <li>{{ index }}. {{ user.name }}</li>
+      } @empty {
+        <span>Empty list of users</span>
+      }
+    </ul>
+   
+    <!-- Old ngFor loop -->
+    <li *ngFor="let user of users; let i = index;">
+      {{ i }}. {{user.name}}
+    </li>
+  
+</div>
+
+
+<div class="container">
+  
+    <!-- Using @switch @case -->
+    @switch (type) { 
+        @case (1) {
+          <div>One</div>
+        } 
+        @case (2) {
+          <div>Two</div>
+        } 
+        @default {
+          <div>Default</div>
+        }
+    }
+  
+    <!-- Using ngSwitch with ngSwitchCase -->
+    <div [ngSwitch]="type">
+      <div *ngSwitchCase="1">One</div>
+      <div *ngSwitchCase="2">Two</div>
+      <div *ngSwitchDefault>Default</div>
+    </div>
+  
+</div>
+
+
+<div class="container">
+  
+    <!-- Using @if with @else -->
+    @if (type == 1) {
+        <h2>One</h2>
+    } @else {
+        <h2>Two</h2>
+    }
+  
+    <!-- Using ngIf with else -->
+    <h2 *ngIf="type == 1; else elseBlock">One</h2>
+    <ng-template #elseBlock><h2>Two</h2></ng-template>
+  
+</div>
