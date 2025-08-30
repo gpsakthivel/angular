@@ -102,6 +102,8 @@ node ./node_modules/@angular/cli/bin/ng serve
 
 - [crash-course](https://www.youtube.com/watch?v=RNr1QZM4A38)
 - wbe-ui-book-lobby-ambassodor
+- tak-ng-19-tut
+- tak-table-poc
 - bank-loan-app
   https://www.youtube.com/watch?v=aIAs7XYlPHk&list=PL7JmcZV0UQtWxJ4sPWTVS6_ZCZgOqELcm&index=9
 - bus-ticket-booking-app
