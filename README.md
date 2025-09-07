@@ -108,12 +108,6 @@ node ./node_modules/@angular/cli/bin/ng serve
   https://www.youtube.com/watch?v=aIAs7XYlPHk&list=PL7JmcZV0UQtWxJ4sPWTVS6_ZCZgOqELcm&index=9
 - bus-ticket-booking-app
   https://www.youtube.com/watch?v=-CbVRyr5HyI&list=PL7JmcZV0UQtWxJ4sPWTVS6_ZCZgOqELcm&index=3
-- employee-management-system
-  https://www.youtube.com/watch?v=z4sN2aIccYM&list=PL7JmcZV0UQtWxJ4sPWTVS6_ZCZgOqELcm&index=10
-- incident-tracking-app
-  https://www.youtube.com/watch?v=4HLUFYrnW5k&list=PL7JmcZV0UQtWxJ4sPWTVS6_ZCZgOqELcm&index=7
-- parking-management-system
-  https://www.youtube.com/watch?v=afNuus87UsY
 
 ### angular-20
 
