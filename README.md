@@ -114,10 +114,6 @@ node ./node_modules/@angular/cli/bin/ng serve
   https://www.youtube.com/watch?v=4HLUFYrnW5k&list=PL7JmcZV0UQtWxJ4sPWTVS6_ZCZgOqELcm&index=7
 - parking-management-system
   https://www.youtube.com/watch?v=afNuus87UsY
-- quotation-management-system
-  https://www.youtube.com/watch?v=l3nZ_DC4pMw&list=PL7JmcZV0UQtWxJ4sPWTVS6_ZCZgOqELcm&index=6
-- goal-planner-app
-- https://www.youtube.com/watch?v=dHx1ykhcgk4&list=PL7JmcZV0UQtWxJ4sPWTVS6_ZCZgOqELcm&index=5
 
 ### angular-20
 
