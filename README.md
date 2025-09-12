@@ -105,24 +105,7 @@ node ./node_modules/@angular/cli/bin/ng serve
 
 ### angular-20
 
-## To-do
-
-### Learn:
-
-- https://www.youtube.com/watch?v=AAu8bjj6-UI
-- https://www.youtube.com/watch?v=Kbauf9IgsC4
-- https://www.youtube.com/watch?v=3qBXWUpoPHo
-- https://www.youtube.com/watch?v=S_wTb4pP_6Q
-- https://www.youtube.com/watch?v=oUmVFHlwZsI
-- https://www.youtube.com/watch?v=BBh3wMVJaso&list=PL3EibBwUnE37aZ937p2L2VoozXUKcsI76
-- https://www.youtube.com/watch?v=EuJsvyFz2kA
-
 ### Practise:
 
 - sample-api-calls-app
 - Reference: https://medium.com/better-programming/angular-api-calls-the-right-way-264198bf2c64
-
-### Reference:
-
-- Free code camp channel
-- Learning Partner channel
